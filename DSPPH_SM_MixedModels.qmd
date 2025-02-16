@@ -1,0 +1,16 @@
+---
+title: "Mixed modelling"
+---
+
+# Why you want to do it: 
+
+# How you can do it: 
+
+
+
+# Next steps
+
+Much more is available in the lubridate packages, including determining durations and dealing with time-zones. Check the [lubridate package "cheat sheet"](https://github.com/rstudio/cheatsheets/blob/main/lubridate.pdf) for more information.
+
+::: footnotes
+:::
