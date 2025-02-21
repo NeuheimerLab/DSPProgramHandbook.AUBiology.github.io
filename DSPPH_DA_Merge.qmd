@@ -1,5 +1,8 @@
 ---
 title: "So you want to: merge your data sets"
+webr:
+  packages:
+    - MASS
 ---
 
 # Why you want to do it: 
