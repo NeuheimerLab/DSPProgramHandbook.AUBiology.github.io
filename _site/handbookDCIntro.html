@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Skills Portfolio Program - Data Collection &amp; Curation Handbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Data Skills Portfolio Program</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./intro.html" rel="" target="">
+ <span class="menu-text">What is the DSP Program?</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./handbookIntro.html" rel="" target="" aria-current="page">
+ <span class="menu-text">The DSP Program Handbook</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./feedback.html" rel="" target="">
+ <span class="menu-text">Feedback</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./handbookDCIntro.html">Data Collection &amp; Curation Handbook</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./handbookIntro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to the Handbook</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./handbookDCIntro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Data Collection &amp; Curation Handbook</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./handbookDAIntro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Management Handbook</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./handbookSMIntro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistical Modelling Handbook</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./FAQ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Frequently Asked Questions</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-dsp-program-handbook-for-data-collection-curation" id="toc-the-dsp-program-handbook-for-data-collection-curation" class="nav-link active" data-scroll-target="#the-dsp-program-handbook-for-data-collection-curation">The DSP Program Handbook for Data Collection &amp; Curation</a>
+  <ul class="collapse">
+  <li><a href="#experimental-vs.-observational-studies" id="toc-experimental-vs.-observational-studies" class="nav-link" data-scroll-target="#experimental-vs.-observational-studies">Experimental vs.&nbsp;observational studies</a></li>
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data collection</a>
+  <ul class="collapse">
+  <li><a href="#choosing-what-you-record" id="toc-choosing-what-you-record" class="nav-link" data-scroll-target="#choosing-what-you-record">Choosing what you record</a></li>
+  <li><a href="#choosing-how-you-record-it" id="toc-choosing-how-you-record-it" class="nav-link" data-scroll-target="#choosing-how-you-record-it">Choosing how you record it</a></li>
+  <li><a href="#include-a-readme-document" id="toc-include-a-readme-document" class="nav-link" data-scroll-target="#include-a-readme-document">Include a “ReadMe” document</a></li>
+  <li><a href="#asking-questions" id="toc-asking-questions" class="nav-link" data-scroll-target="#asking-questions">Asking questions</a></li>
+  <li><a href="#backing-up-your-data" id="toc-backing-up-your-data" class="nav-link" data-scroll-target="#backing-up-your-data">Backing up your data</a></li>
+  </ul></li>
+  <li><a href="#where-to-go-from-here" id="toc-where-to-go-from-here" class="nav-link" data-scroll-target="#where-to-go-from-here">Where to go from here:</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Collection &amp; Curation Handbook</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="the-dsp-program-handbook-for-data-collection-curation" class="level1 unnumbered">
+<h1 class="unnumbered">The DSP Program Handbook for Data Collection &amp; Curation</h1>
+<p>Data <strong>curation</strong> is the <strong>collection</strong> and on-going management of data.</p>
+<p>Good data curation helps maintain data quality, and allows you and others to discover, access, and re-use your data. Data curation skills then are essential for ethical, transparent and reproducible science, and are an important part of your contribution to the field of biology.</p>
+<section id="experimental-vs.-observational-studies" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-vs.-observational-studies">Experimental vs.&nbsp;observational studies</h2>
+<p>Depending on your research question, hypothesis and methods available, you may collect data (observations) from an experimental (e.g.&nbsp;in a lab) or observational study (e.g.&nbsp;in the field).</p>
+<p>Both strategies have advantages and disadvantages. For example, experimental studies allow you to control many of the factors that may influence your study outside your research hypothesis. Experimental studies also allow you to more easily test every combination of predictors allowing you to better disentangle effects of multiple predictors on your response. In contrast, experimental studies are limited in their ability to represent the “real world” while field studies allow you to explore your hypothesis <em>in situ</em>.</p>
+</section>
+<section id="data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection">Data collection</h2>
+<p>The individual needs of your project will vary, but here we will present a standard way of structuring your data and data collection that will support robust and ethical research. Specifically we will cover:</p>
+<ul>
+<li><p>Choosing what you record</p></li>
+<li><p>Choosing how you record it</p></li>
+<li><p>Naming your columns and data files</p></li>
+<li><p>Including a “ReadMe” document</p></li>
+<li><p>Asking questions</p></li>
+<li><p>Backing up your data</p></li>
+</ul>
+<p><strong>A note on tools:</strong> You will most likely be collecting your data in a spreadsheet editor like Excel<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but these guidelines are generally applicable for however you are collecting your data.</p>
+<section id="choosing-what-you-record" class="level3">
+<h3 class="anchored" data-anchor-id="choosing-what-you-record">Choosing what you record</h3>
+<p>You will need to record observations of each predictor and response. You should include comments made during the data collection noting unusual conditions (e.g.&nbsp;weather, equipment issues) that might affect your observations (as a comments column). When in doubt record, record, record.</p>
+</section>
+<section id="choosing-how-you-record-it" class="level3">
+<h3 class="anchored" data-anchor-id="choosing-how-you-record-it">Choosing how you record it</h3>
+<p>Best practices is to record your data in “unique record format”(also called “long format”). Unique record format makes it easier to track how you have collected the data, it makes it easier for two or more researchers to collaborate on the data collection, and it reduces the chance of errors in your data collection.</p>
+<p>Recording your data in unique record format means that:</p>
+<ul>
+<li><p>every column is a variable with one format (either numeric or character),</p></li>
+<li><p>every row is an observation,</p></li>
+<li><p>every cell holds only one piece of information (i.e.&nbsp;a single value), and</p></li>
+<li><p>you record your data in a rectangular table: this means that all columns have the same number of rows. If needed, you can fill missing information with a value to show it is missing (e.g.&nbsp;using <code>NA</code> which is what R uses to indicate a missing value)</p></li>
+</ul>
+<p>In addition - you should make sure there is no extra white space (e.g.&nbsp;blank rows) above or to the left of your data.</p>
+<ul>
+<li><p>it is most flexible to record dates as separate columns for year, month and day, and, similarly, record times as separate columns of hours and minutes. The handbook goes over working with with complicated dates columns <a href="./DSPPH_DA_DatesTimes.html">R can handle that</a>, but having separate columns for each variable is easiest.</p></li>
+<li><p>record a decimal using “.” not “,” as this will be most consistent for the data analysis tools you will be using. Again, there are ways of working around this in R if your data does use commas as decimals.</p></li>
+</ul>
+<section id="naming-your-columns" class="level4">
+<h4 class="anchored" data-anchor-id="naming-your-columns">Naming your columns</h4>
+<ul>
+<li><p>Make your variable (column) names simple but informative.</p></li>
+<li><p>Avoid spaces in your column names - instead you can include multiple words in your column names by using “snake_case” (e.g.&nbsp;total_length).</p></li>
+<li><p>Avoid having units in your column names (use a readme file instead, see below)</p></li>
+</ul>
+</section>
+<section id="naming-your-data-files" class="level4">
+<h4 class="anchored" data-anchor-id="naming-your-data-files">Naming your data files</h4>
+<p>Include a useful name for your data file that describes the type of data in the file and the project or person related to the project, e.g.&nbsp;“ChristensenMSc_EnviroData.csv”</p>
+<p>Note that you will likely record your data in a spreadsheet editor resulting in a file with e.g.&nbsp;<code>.xlsx</code> extension. That said, you may want to save your data as a plain text file (e.g.&nbsp;with <code>.txt</code> or <code>.csv</code> extension). This is because a plain text file is the most “portable” across platforms (e.g.&nbsp;Windows vs.&nbsp;Mac) and into the future. Also, this format avoids Excel reformatting data columns that can cause confusion with interpretation. You can change how your file is saved using “Save as” in the file menu.</p>
+<p>Here’s an example of best-practice data collection practice (i.e.&nbsp;unique record format) - it is a file called <code>Pedersen_ExampleData.csv</code>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="longFormat.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>Note that:</p>
+<p>1a) There is no white space above or to the left of the data.<br>
+1b) Every column is a variable that is either a numeric or a character.<br>
+1c) Each row is a unique observation.<br>
+1d) Each cell holds only a single piece of information.<br>
+1e) The data are recorded in a regular table (no missing rows or columns).</p>
+<p>In contrast, here is an example of what <strong>NOT</strong> to do:</p>
+<p><img src="wideFormat.png" class="img-fluid" data-fig-align="center" width="700"> Note in this not-great-practice example:</p>
+<p>2a) There is white space above the data.<br>
+2b) Some columns contain a mix of numeric and character data. Note that it is better to give information on units (e.g.&nbsp;g) in the ReadMe file (see next section).<br>
+2c) Rows contain more than one observation.<br>
+2d) Some cells hold more than one piece of information.<br>
+2e) The data are not recorded in a regular table (there are missing rows and columns).<br>
+2f) A variable is not in its own column.<br>
+2g) A column name contains white space.</p>
+</section>
+</section>
+<section id="include-a-readme-document" class="level3">
+<h3 class="anchored" data-anchor-id="include-a-readme-document">Include a “ReadMe” document</h3>
+<p>For each data file, include a separate “ReadMe” document that describes the data. The ReadMe file documents (briefly) what the data are, where they came from, and how they can be reused. The document allows you to communicate your data to your colleagues and your future self.</p>
+<p>This document should:</p>
+<ul>
+<li><p>be a plain text or pdf document.</p></li>
+<li><p>include the name of the data file associated with the ReadMe document.</p></li>
+<li><p>include a description of where the data came from.</p></li>
+<li><p>include information on how the data can or can not be reused.</p></li>
+<li><p>include a contact person for the data and their contact details (e.g.&nbsp;email).</p></li>
+<li><p>include descriptions of each column, the type of data and the format of the data, including units.</p></li>
+<li><p>include a description of how missing values are recorded (e.g.&nbsp;<code>NA</code>).</p></li>
+</ul>
+<p>Here is an example of a ReadMe document called <code>Pedersen_ExampleData_ReadMe.pdf</code> to accompany the <code>Pedersen_ExampleData.csv</code> above:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ReadMe.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+</section>
+<section id="asking-questions" class="level3">
+<h3 class="anchored" data-anchor-id="asking-questions">Asking questions</h3>
+<p>Remember to ask questions! Asking your questions is one of the most valuable contributions you can make to science. Asking your questions will help us clarify methods, develop better strategies and stop accidents before they happen.</p>
+<ul>
+<li><p>If you are unsure <strong>how</strong> to do something - stop and ask!</p></li>
+<li><p>If you are unsure <strong>why</strong> you should do something - stop and ask!</p></li>
+<li><p>If something does not feel <strong>safe and comfortable</strong> - stop and ask!</p></li>
+</ul>
+<p><a href="https://abneuheimer.org/teaching-outreach/#GETTINGOUTOFYOUROWNWAY">more here</a></p>
+</section>
+<section id="backing-up-your-data" class="level3">
+<h3 class="anchored" data-anchor-id="backing-up-your-data">Backing up your data</h3>
+<p>Remember to back up your data on multiple sources. (more TBA)</p>
+</section>
+</section>
+<section id="where-to-go-from-here" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-go-from-here">Where to go from here:</h2>
+<p>For more ideas on best practices regarding data curation, try:</p>
+<p>Wickham, H. . (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10</p>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>though you may have projects where you are working with databases<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

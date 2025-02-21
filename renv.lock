@@ -424,7 +424,7 @@
     },
     "emmeans": {
       "Package": "emmeans",
-      "Version": "1.10.5",
+      "Version": "1.10.7",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -437,7 +437,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "5c42da2936ccaa3802b4893a65553dc4"
+      "Hash": "b4c05dd060e42dd18d722e16d8cf7ec4"
     },
     "estimability": {
       "Package": "estimability",
@@ -957,7 +957,7 @@
     },
     "lubridate": {
       "Package": "lubridate",
-      "Version": "1.9.3",
+      "Version": "1.9.4",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -966,7 +966,7 @@
         "methods",
         "timechange"
       ],
-      "Hash": "680ad542fbcf801442c83a6ac5a2126c"
+      "Hash": "be38bc740fc51783a78edb5a157e4104"
     },
     "magrittr": {
       "Package": "magrittr",
@@ -1365,7 +1365,7 @@
     },
     "rmarkdown": {
       "Package": "rmarkdown",
-      "Version": "2.27",
+      "Version": "2.29",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1384,7 +1384,7 @@
         "xfun",
         "yaml"
       ],
-      "Hash": "27f9502e1cdbfa195f94e03b0f517484"
+      "Hash": "df99277f63d01c34e95e3d2f06a79736"
     },
     "sass": {
       "Package": "sass",
