@@ -2,6 +2,20 @@
 title: "Data Skills Portfolio Program"
 ---
 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; URL=https://neuheimerlab.github.io/DSPPHandbook/">
+    <link rel="canonical" href="https://neuheimerlab.github.io/DSPPHandbook/">
+</head>
+<body>
+    <p>If you are not redirected, <a href="https://neuheimerlab.github.io/DSPPHandbook/">click here</a>.</p>
+</body>
+</html>
+
 # Welcome to the Data Skills Portfolio Program! {.unnumbered}
 
 ## DRAFT WEBSITE ## testing
