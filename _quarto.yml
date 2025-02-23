@@ -11,23 +11,8 @@ website:
         href: index.qmd
       - text: "What is the DSP Program?"
         href: intro.qmd
-      - text: "The DSP Program Handbook"
-        href: handbookIntro.qmd
-      - text: "Feedback"
-        href: feedback.qmd
         
-  sidebar:
-    - title: "What is the DSP Program?"
-      style: "docked"
-      background: light
-      contents:
-        - intro.qmd
-        - philosophy.qmd
-        - structure.qmd
-        
-    - title: "The DSP Program Handbook"
-      contents: 
-        - FAQ.qmd
+  
     
 
 format:
