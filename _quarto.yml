@@ -27,10 +27,6 @@ website:
         
     - title: "The DSP Program Handbook"
       contents: 
-        - handbookIntro.qmd
-        - handbookDCIntro.qmd
-        - handbookDAIntro.qmd
-        - handbookSMIntro.qmd
         - FAQ.qmd
     
 
